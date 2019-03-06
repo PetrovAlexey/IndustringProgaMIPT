@@ -1,0 +1,1 @@
+# industring-proga-mipt
