@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questions</title>
+    <meta charset="utf-8">
+  </head>
+    <body>
+        <p><a href="{% url 'polls:ask' %}">Задать вопрос</a></p>
+        <ul>
+        {% for question in object_list %}
+            <li><a href="{{ question.get_absolute_url }}">{{ question.text }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
+
